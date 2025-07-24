@@ -1,5 +1,7 @@
 package com.studyopedia;
 
+import java.util.Scanner;
+
 public class question1 {
 
 	public static void main(String[] args) {
