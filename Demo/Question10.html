@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms on a Single Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        /* Style for Registration Form */
+        .registration-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .registration-form input, .registration-form textarea, .registration-form select {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container visitor-info">
+        <h2>Visitors Information</h2>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Email address using a textbox</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>User's interest web for research or purchase</td>
+                    <td><input type="checkbox" name="interest"></td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>
+                        <select name="occupation">
+                            <option value="student" selected>Student</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Want us to send you junk emails?</td>
+                    <td>
+                        <input type="radio" id="absolutely" name="junk_email" value="absolutely">
+                        <label for="absolutely">absolutely</label>
+                        <input type="radio" id="no_way_man" name="junk_email" value="no_way_man">
+                        <label for="no_way_man">no way man</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="form-container registration-form">
+        <h2>Online Registration</h2>
+        <form action="#">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="confirm_password">Confirm password:</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3"></textarea>
+            </div>
+            <div>
+                <label for="profession">Profession:</label>
+                <select id="profession" name="profession">
+                    <option value="" disabled selected>Select your profession</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

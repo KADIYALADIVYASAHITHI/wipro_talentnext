@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Information Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Visitors Information</h2>
+    <hr>
+    
+    <form action="#">
+        <table>
+            <tr>
+                <td>Email address using a textbox</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>User's interest web for research or purchase</td>
+                <td><input type="checkbox" name="interest"></td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>
+                    <select name="occupation">
+                        <option value="student" selected>Student</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Want us to send you junk emails?</td>
+                <td>
+                    <input type="radio" id="absolutely" name="junk_email" value="absolutely">
+                    <label for="absolutely">absolutely</label>
+                    <input type="radio" id="no_way_man" name="junk_email" value="no_way_man">
+                    <label for="no_way_man">no way man</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
