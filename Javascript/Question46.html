@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Border</title>
+    <style>
+        div {
+            border: 15px solid transparent; /* A transparent solid border is required for border-image to work */
+            padding: 20px;
+            border-image: url("imagename.png") 30 30 stretch;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This div has an image as its border. Make sure you have an image file named 'imagename.png' in the same folder.
+    </div>
+</body>
+</html>

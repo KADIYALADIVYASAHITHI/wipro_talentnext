@@ -1,0 +1,102 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    background-color: #5a5a6a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-section {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Base button styling */
+.btn {
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Type Button Colors */
+.btn-for-all {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-kids {
+    background-color: #0d2e54; /* Dark blue for 'bark blue' */
+    color: white;
+}
+
+.btn-teens {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn-scientific {
+    background-color: #87CEEB; /* Light Blue */
+    color: #333;
+}
+
+.btn-crime-horror {
+    background-color: #FF4500; /* Red-Orange for 'OrangeHorror' */
+    color: white;
+}
+
+.btn-feedback {
+    background-color: #b0b0b0; /* Neutral gray for 'Feedback' */
+    color: #333;
+}
+
+/* Font Size Buttons (4 steps, big to small) */
+.font-size-1 {
+    font-size: 1.5em;
+    padding: 20px 40px;
+}
+
+.font-size-2 {
+    font-size: 1.25em;
+    padding: 18px 36px;
+}
+
+.font-size-3 {
+    font-size: 1em;
+    padding: 16px 32px;
+}
+
+.font-size-4 {
+    font-size: 0.8em;
+    padding: 14px 28px;
+}

@@ -1,0 +1,33 @@
+.food-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.food-table th, .food-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.food-table th {
+    background-color: #f2f2f2;
+}
+
+/* Conditional formatting based on calorie values */
+.low-cal {
+    background-color: #a7e4a7; /* Light green for <300 */
+}
+
+.med-cal {
+    background-color: #a7d0e4; /* Light blue for 301-700 */
+}
+
+.high-cal {
+    background-color: #f5d196; /* Light orange for 700-1200 */
+}
+
+.very-high-cal {
+    background-color: #e4a7a7; /* Light red for >1200 */
+}

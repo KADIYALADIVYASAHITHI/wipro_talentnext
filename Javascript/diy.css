@@ -1,0 +1,8 @@
+div {
+    border: 1px solid black;
+    height: 150px;
+    width: 180px;
+    background: url("imagename.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

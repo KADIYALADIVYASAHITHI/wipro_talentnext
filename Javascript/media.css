@@ -1,0 +1,34 @@
+/* Hide all images by default */
+.image-container img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* For large screens (e.g., desktops) */
+@media screen and (min-width: 1201px) {
+    #img1 {
+        display: block;
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    #img2 {
+        display: block;
+    }
+}
+
+/* For small screens (e.g., tablets in portrait mode) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #img3 {
+        display: block;
+    }
+}
+
+/* For extra-small screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+    #img4 {
+        display: block;
+    }
+}
